@@ -1,0 +1,191 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+*{
+    overflow-y: hidden;
+}
+body{
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(./bg-top.svg), url(./bg-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:100% 0%, 0% 110%;
+    background-size: 25%, 25%;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container-fluid{
+    /* background-color: hsl(240, 78%, 98%);
+    background-image: url(./bg-top.svg), url(./bg-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x:100% 0%, 0% 100%;
+    background-size: 25%, 25%; */
+}
+
+.head{
+    margin: auto;
+    /* border: 1px solid ; */
+    text-align: center;
+    /* display: flex; */
+}
+
+.toggle-frame{
+    /* border: 1px solid red; */
+    border-radius: 30px;
+    background-color: #eae9e9;
+    width:3.5rem;
+    height:2rem;
+    margin: auto;
+    align-content: center;
+    padding:0.2rem;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    width:20rem;
+    margin: auto;
+    /* border:1px solid */
+}
+h1{
+    font-size:3rem;
+    border-bottom: 1px solid;
+    width: 15rem;
+    margin: auto;
+    padding-bottom: 1.5rem;
+}
+
+.case{
+    /* border: 1px solid ; */
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    height:70vh;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.case p{
+    border-bottom: 1px solid;
+    width: 15rem;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+
+}
+.case-item{
+    z-index: 1;
+    /* border: 1px solid ; */
+    width:25vw;
+    text-align: center;
+    height: 60vh;
+    margin-top: 2rem;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+.case-item2{
+    /* border: 1px solid ; */
+    width:25vw;
+    text-align: center;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:#fff;
+    padding-top:1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+    height: 62vh;
+    margin-top:1rem;
+    z-index:2;
+    
+}
+.case-item3{
+    /* border: 1px solid ; */
+    width:25vw;
+    text-align: center;
+    height: 60vh;
+    margin-top: 2rem;
+    border-radius: 5px;
+    /* background-color: ; */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+    border-radius: 0px 5px 5px 0px;
+    z-index: 1;
+}
+
+button{
+    width:80%;
+    height:2rem;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    margin-top:1rem;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(#fff, #fff) ;
+    color:hsl(237, 63%, 64%);
+    border:1px solid hsl(237, 63%, 64%)
+}
+
+#btn{
+    background-image:linear-gradient(#fff, #fff) ;
+    border: none;
+    color:  hsl(237, 63%, 64%);
+}
+
+#btn:hover{
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%)) ;
+    color:#fff;
+    border:1px solid #fff;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width:90px;
+    height:40px;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    margin-top:0.5rem;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    transition: .4s ;
+    border-radius: 34px;
+    background-color: whitesmoke;
+    /* border:1px solid; */
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider:before{
+    position: absolute;
+    content:"";
+    height:30px;
+    width:30px;
+    left:5px;
+    bottom:5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+
+}
+
+input:checked + .slider{
+    background-color: hsl(237, 63%, 64%);
+}
+
+input:checked + .slider:before{
+    transform: translateX(50px)
+}
